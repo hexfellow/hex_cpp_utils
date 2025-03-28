@@ -1,5 +1,6 @@
 cmake_minimum_required(VERSION 3.0.2)
 project(hex_cpp_utils VERSION 0.0.1)
+cmake_policy(SET CMP0074 NEW)
 
 ########################################################
 # Options
@@ -79,4 +80,16 @@ install(FILES
     "${CMAKE_CURRENT_BINARY_DIR}/hex_cpp_utilsConfig.cmake"
     "${CMAKE_CURRENT_BINARY_DIR}/hex_cpp_utilsConfigVersion.cmake"
     DESTINATION lib/cmake/hex_cpp_utils
+)
+
+########################################################
+# Uninstall
+########################################################
+configure_file(
+    "${CMAKE_CURRENT_SOURCE_DIR}/cmake/cmake_uninstall.cmake.in"
+    "${CMAKE_CURRENT_BINARY_DIR}/cmake_uninstall.cmake"
+    @ONLY
+)
+add_custom_target(uninstall
+    COMMAND ${CMAKE_COMMAND} -P ${CMAKE_CURRENT_BINARY_DIR}/cmake_uninstall.cmake
 )

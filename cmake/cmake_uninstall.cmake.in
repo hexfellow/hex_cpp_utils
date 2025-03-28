@@ -1,0 +1,26 @@
+if(NOT DEFINED CMAKE_INSTALL_PREFIX)
+  set(CMAKE_INSTALL_PREFIX "@CMAKE_INSTALL_PREFIX@")
+endif()
+message("CMAKE_INSTALL_PREFIX: ${CMAKE_INSTALL_PREFIX}")
+
+message("Uninstalling hex_cpp_utils...")
+
+# Remove installed header files
+if(EXISTS "@CMAKE_INSTALL_PREFIX@/include")
+  file(REMOVE_RECURSE "@CMAKE_INSTALL_PREFIX@/include/hex_cpp_utils")
+endif()
+
+# Remove cmake config files
+if(EXISTS "@CMAKE_INSTALL_PREFIX@/lib/cmake/hex_cpp_utils")
+  file(REMOVE_RECURSE "@CMAKE_INSTALL_PREFIX@/lib/cmake/hex_cpp_utils")
+endif()
+
+if(EXISTS "@CMAKE_INSTALL_PREFIX@/lib/hex_cpp_utilsConfig.cmake")
+  file(REMOVE "@CMAKE_INSTALL_PREFIX@/lib/hex_cpp_utilsConfig.cmake")
+endif()
+
+if(EXISTS "@CMAKE_INSTALL_PREFIX@/lib/hex_cpp_utilsConfigVersion.cmake")
+  file(REMOVE "@CMAKE_INSTALL_PREFIX@/lib/hex_cpp_utilsConfigVersion.cmake")
+endif()
+
+message("Uninstall complete.")

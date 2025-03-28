@@ -204,6 +204,12 @@ sudo make install
     ```cmakelist
     find_package(hex_cpp_utils REQUIRED)
     target_link_libraries(your_target PRIVATE 
-        ${hex_cpp_utils_LIBRARIES}
+        hex_cpp_utils::hex_cpp_utils
     )
+    ```
+
+3. Uninstall the library:
+
+    ```bash
+    sudo make uninstall
     ```
