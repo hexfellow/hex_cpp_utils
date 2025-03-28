@@ -4,8 +4,8 @@
  * Date   : 2025-03-28
  ****************************************************************/
 
-#ifndef HEX_CPP_UTILS_HEX_POSE_H
-#define HEX_CPP_UTILS_HEX_POSE_H
+#ifndef HEX_CPP_UTILS_HEX_POSE_H_
+#define HEX_CPP_UTILS_HEX_POSE_H_
 
 #include <Eigen/Core>
 #include <Eigen/Geometry>
@@ -47,4 +47,4 @@ struct HexPose {
 
 }  // namespace hex_utils
 
-#endif  // HEX_CPP_UTILS_HEX_POSE_H
+#endif  // HEX_CPP_UTILS_HEX_POSE_H_

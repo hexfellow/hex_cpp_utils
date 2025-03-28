@@ -4,8 +4,8 @@
  * Date   : 2025-03-28
  ****************************************************************/
 
-#ifndef HEX_CPP_UTILS_HEX_SCAN_H
-#define HEX_CPP_UTILS_HEX_SCAN_H
+#ifndef HEX_CPP_UTILS_HEX_SCAN_H_
+#define HEX_CPP_UTILS_HEX_SCAN_H_
 
 #include <vector>
 
@@ -54,4 +54,4 @@ struct HexScan {
 
 }  // namespace hex_utils
 
-#endif  // HEX_CPP_UTILS_HEX_SCAN_H
+#endif  // HEX_CPP_UTILS_HEX_SCAN_H_

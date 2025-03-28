@@ -4,8 +4,8 @@
  * Date   : 2025-03-28
  ****************************************************************/
 
-#ifndef HEX_CPP_UTILS_HEX_POINT_CLOUD_H
-#define HEX_CPP_UTILS_HEX_POINT_CLOUD_H
+#ifndef HEX_CPP_UTILS_HEX_POINT_CLOUD_H_
+#define HEX_CPP_UTILS_HEX_POINT_CLOUD_H_
 
 #include <pcl/point_cloud.h>
 #include <pcl/point_types.h>
@@ -54,4 +54,4 @@ struct HexPointCloud {
 
 }  // namespace hex_utils
 
-#endif  // HEX_CPP_UTILS_HEX_POINT_CLOUD_H
+#endif  // HEX_CPP_UTILS_HEX_POINT_CLOUD_H_

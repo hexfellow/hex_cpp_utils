@@ -4,8 +4,8 @@
  * Date   : 2025-03-28
  ****************************************************************/
 
-#ifndef HEX_CPP_UTILS_HEX_ODOM_H
-#define HEX_CPP_UTILS_HEX_ODOM_H
+#ifndef HEX_CPP_UTILS_HEX_ODOM_H_
+#define HEX_CPP_UTILS_HEX_ODOM_H_
 
 #include <Eigen/Core>
 #include <Eigen/Geometry>
@@ -61,4 +61,4 @@ struct HexOdom {
 
 }  // namespace hex_utils
 
-#endif  // HEX_CPP_UTILS_HEX_ODOM_H
+#endif  // HEX_CPP_UTILS_HEX_ODOM_H_

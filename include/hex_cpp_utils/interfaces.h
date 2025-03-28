@@ -4,8 +4,8 @@
  * Date   : 2025-03-28
  ****************************************************************/
 
-#ifndef HEX_CPP_UTILS_INTERFACES_H
-#define HEX_CPP_UTILS_INTERFACES_H
+#ifndef HEX_CPP_UTILS_INTERFACES_H_
+#define HEX_CPP_UTILS_INTERFACES_H_
 
 #include "hex_imu.h"
 #include "hex_odom.h"
@@ -14,4 +14,4 @@
 #include "hex_scan.h"
 #include "hex_stamp.h"
 
-#endif  // HEX_CPP_UTILS_INTERFACES_H
+#endif  // HEX_CPP_UTILS_INTERFACES_H_

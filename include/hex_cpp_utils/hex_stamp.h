@@ -4,8 +4,8 @@
  * Date   : 2025-03-28
  ****************************************************************/
 
-#ifndef HEX_CPP_UTILS_HEX_STAMP_H
-#define HEX_CPP_UTILS_HEX_STAMP_H
+#ifndef HEX_CPP_UTILS_HEX_STAMP_H_
+#define HEX_CPP_UTILS_HEX_STAMP_H_
 
 #include <cstdint>
 #include <iostream>
@@ -110,4 +110,4 @@ struct HexStamp {
 
 }  // namespace hex_utils
 
-#endif  // HEX_CPP_UTILS_HEX_STAMP_H
+#endif  // HEX_CPP_UTILS_HEX_STAMP_H_
