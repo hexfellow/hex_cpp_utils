@@ -13,7 +13,6 @@ target_link_libraries(point_cloud_example PRIVATE hex_cpp_utils)
 # Add scan example
 add_executable(scan_example scan_example.cc)
 target_link_libraries(scan_example PRIVATE hex_cpp_utils)
-install(TARGETS scan_example RUNTIME DESTINATION bin)
 
 # Add pose example
 add_executable(pose_example pose_example.cc)
