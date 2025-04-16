@@ -17,7 +17,8 @@ int main(int argc, char** argv) {
   // copy operator
   std::cout << "#### copy ####" << std::endl;
   HexPose pose_constructor(pose);
-  HexPose pose_equal = pose;
+  HexPose pose_equal;
+  pose_equal = pose;
   pose.new_in_old.translation() << 3.0, 2.0, 1.0;
   std::cout << "raw pose: " << pose << std::endl;
   std::cout << "constructor pose: " << pose_constructor << std::endl;

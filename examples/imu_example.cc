@@ -17,7 +17,8 @@ int main(int argc, char** argv) {
   // copy operator
   std::cout << "#### copy ####" << std::endl;
   HexImu imu_constructor(imu);
-  HexImu imu_equal = imu;
+  HexImu imu_equal;
+  imu_equal = imu;
   imu.acc_lin << 1.0, 2.0, 3.0;
   imu.vel_ang << 4.0, 5.0, 6.0;
   std::cout << "raw imu: " << imu << std::endl;

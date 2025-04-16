@@ -18,9 +18,13 @@ int main(int argc, char** argv) {
 
   // copy
   std::cout << "#### copy ####" << std::endl;
-  HexStamp stamp3 = stamp1;
-  std::cout << "stamp3 = stamp1" << std::endl;
-  std::cout << "stamp3: " << stamp3 << std::endl;
+  HexStamp stamp3(stamp1);
+  HexStamp stamp4;
+  stamp4 = stamp1;
+  stamp1.sec = 3;
+  std::cout << "raw stamp1: " << stamp1 << std::endl;
+  std::cout << "constructor stamp3: " << stamp3 << std::endl;
+  std::cout << "equal stamp4: " << stamp4 << std::endl;
 
   // compare
   std::cout << "#### compare ####" << std::endl;
@@ -29,24 +33,24 @@ int main(int argc, char** argv) {
   } else {
     std::cout << "stamp1 is greater than stamp2" << std::endl;
   }
-  if (stamp1 == stamp3) {
-    std::cout << "stamp1 is equal to stamp3" << std::endl;
+  if (stamp3 == stamp4) {
+    std::cout << "stamp3 is equal to stamp4" << std::endl;
   } else {
-    std::cout << "stamp1 is not equal to stamp3" << std::endl;
+    std::cout << "stamp3 is not equal to stamp4" << std::endl;
   }
 
   // plus
   std::cout << "#### plus ####" << std::endl;
-  HexStamp stamp4 = stamp1 + 1.0;
-  std::cout << "stamp4 = stamp1 + 1.0" << std::endl;
-  std::cout << "stamp4: " << stamp4 << std::endl;
+  HexStamp stamp5 = stamp1 + 1.0;
+  std::cout << "stamp5 = stamp1 + 1.0" << std::endl;
+  std::cout << "stamp5: " << stamp5 << std::endl;
 
   // minus
   std::cout << "#### minus ####" << std::endl;
-  HexStamp stamp5 = stamp2 - 1.0;
-  std::cout << "stamp5 = stamp2 - 1.0" << std::endl;
-  std::cout << "stamp5: " << stamp5 << std::endl;
-  std::cout << "stamp5 - stamp2: " << stamp5 - stamp2 << "s" << std::endl;
+  HexStamp stamp6 = stamp2 - 1.0;
+  std::cout << "stamp6 = stamp2 - 1.0" << std::endl;
+  std::cout << "stamp6: " << stamp6 << std::endl;
+  std::cout << "stamp6 - stamp2: " << stamp6 - stamp2 << "s" << std::endl;
 
   return 0;
 }

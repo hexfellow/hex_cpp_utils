@@ -34,7 +34,8 @@ int main() {
   // copy operator
   std::cout << "#### copy ####" << std::endl;
   HexPointCloud<pcl::PointXYZ> cloud_constructor(cloud);
-  HexPointCloud<pcl::PointXYZ> cloud_equal = cloud;
+  HexPointCloud<pcl::PointXYZ> cloud_equal;
+  cloud_equal = cloud;
   cloud.points->push_back(pcl::PointXYZ(1.0, 2.0, 3.0));
   std::cout << "raw cloud: " << cloud << std::endl;
   std::cout << "constructor cloud: " << cloud_constructor << std::endl;

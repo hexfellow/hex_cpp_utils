@@ -17,7 +17,8 @@ int main(int argc, char** argv) {
   // copy operator
   std::cout << "#### copy ####" << std::endl;
   HexScan scan_constructor(scan);
-  HexScan scan_equal = scan;
+  HexScan scan_equal;
+  scan_equal = scan;
   scan.distances.push_back(1.0);
   scan.intensities.push_back(2.0);
   std::cout << "raw scan: " << scan << std::endl;

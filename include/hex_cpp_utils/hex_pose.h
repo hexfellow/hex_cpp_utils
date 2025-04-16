@@ -35,6 +35,10 @@ struct HexPose {
     if (this == &that) {
       return *this;
     }
+
+    this->stamp = that.stamp;
+    this->new_in_old = that.new_in_old;
+    return *this;
   }
 
   // print operator

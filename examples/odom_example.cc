@@ -17,7 +17,8 @@ int main() {
   // copy operator
   std::cout << "#### copy ####" << std::endl;
   HexOdom odom_constructor(odom);
-  HexOdom odom_equal = odom;
+  HexOdom odom_equal;
+  odom_equal = odom;
   odom.vel_ang << 1.0, 2.0, 3.0;
   std::cout << "raw odom: " << odom << std::endl;
   std::cout << "constructor odom: " << odom_constructor << std::endl;
