@@ -49,7 +49,8 @@ int main() {
   // copy operator
   std::cout << "#### copy ####" << std::endl;
   HexPointCloud<PointXYZRTLT> cloud_xyzrtlt_constructor(cloud_xyzrtlt);
-  HexPointCloud<PointXYZRTLT> cloud_xyzrtlt_equal = cloud_xyzrtlt;
+  HexPointCloud<PointXYZRTLT> cloud_xyzrtlt_equal;
+  cloud_xyzrtlt_equal = cloud_xyzrtlt;
   PointXYZRTLT point;
   point.x = 1.0;
   point.y = 2.0;

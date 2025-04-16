@@ -39,7 +39,8 @@ struct HexPointCloud {
     }
 
     this->stamp = that.stamp;
-    this->points = that.points;
+    this->points = typename pcl::PointCloud<PointT>::Ptr(
+        new pcl::PointCloud<PointT>(*that.points));
     return *this;
   }
 
